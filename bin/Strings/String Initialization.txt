@@ -1,4 +1,4 @@
-Strings in java are Non Implicit data type
+							Strings in java are of Non Implicit data type (of OBJECT Type)
 
 String can be initialized or used in 3 different ways:
 	1. Implicit way: 
