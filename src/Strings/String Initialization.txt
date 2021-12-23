@@ -1,0 +1,25 @@
+Strings in java are Non Implicit data type
+
+String can be initialized or used in 3 different ways:
+	1. Implicit way: 
+		String str = "abccc";
+	2. Explicit Way:
+		String str  = new String("asd");
+	3. StringBuffer str = new StringBuffer("asdad");
+	
+	Properties for implicit way of strings:
+		1. It is not Mutable
+		2. It is stored at "String Pool" Location
+		3. In string pool location, if for the same string, another variable is created again, then in string pool same string wouldn't be created again instead it will return the same address of the same string to that string variable.
+		4. comparison operator('==') should generaly be used as address comparison and .equalsTo() for value comparison of two string
+		
+		
+	Properties for Explicit way of string
+		1. These type of strings are stored in Heap memory location. (are larger in size than string pool)
+		2. Not mutable
+		3. comparison operator('==') should generaly be used as address comparison and .equalsTo() for value comparison of two string
+		
+	Properties for stringBuffer type of strings
+		1. These string types are of Dynamic type or Mutable
+		2. These are also stored in Heap.
+		3. These type should be used where strings can be very dynamic in nature
