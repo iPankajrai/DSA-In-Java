@@ -27,8 +27,14 @@ public class Basics {
 		//System.out.println(arr2d);	//arr2d stores reference of 2d array (address of master array) : [[I@6acbcfc0
 		//System.out.println(arr2d[0]);	//arr2d[0] stores reference of array at 0 : [I@5f184fc6
 		
-		int largeSum_col = largestColSum(array2d);
-		System.out.println("Largest Column sum is = " + largeSum_col);
+		//int largeSum_col = largestColSum(array2d);
+		//System.out.println("Largest Column sum is = " + largeSum_col);
+		
+		int arr[][]=new int[4][5];
+	    for(int i=0;i<5;i++){	//row should be from 0 to 3 hence it will throw index out of bound exception
+	        arr[i][0]=2;
+	    }
+	    System.out.print(arr[3][0]);
 		
 	}
 	
@@ -93,3 +99,5 @@ public class Basics {
 	}
 	
 }
+
+
