@@ -56,29 +56,31 @@ public class SpiralPrint {
 	           //printFromLeftToRight();	//ce--
 	           for(int i=cs; i<=ce; i++){
 	               System.out.print(matrix[cs][i] + " ");
+	               count++;
 	           }
 	           rs++;
 	
 	           //printFromUpToDown();	//re--
 	           for(int j=rs; j<=re; j++){
 	               System.out.print(matrix[j][ce] + " ");
+	               count++;
 	           }
 	           ce--;
 	
 	           //printFromRightTOLeft();	//cs++
 	           for(int k=ce; k>=cs; k--){
 	               System.out.print(matrix[re][k] + " ");
+	               count++;
 	           }
 	           re--;
 	
 	           //printFromDownTOUp();	//rs++
 	           for(int l=re; l>=rs; l--){
 	               System.out.print(matrix[l][cs] + " ");
+	               count++;
 	           }
 	           cs++;
 	
-	           count++;
-	           
 	       }	//while end
 	   }	//else end
 	}	//function end
