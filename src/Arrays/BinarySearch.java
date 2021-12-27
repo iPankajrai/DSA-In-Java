@@ -5,7 +5,7 @@ public class BinarySearch {
 	public static void main(String[] args) {
 		
 		int[] input = {1,2,3,4,5};
-		
+
 		int index = binarySearch(input, 0);
 		System.out.println(index);
 
@@ -35,5 +35,7 @@ public class BinarySearch {
 		//if not found the elem in given array then return -1
 		return -1;
 	}
-
+	
+	
+	
 }
