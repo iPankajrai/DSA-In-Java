@@ -71,16 +71,17 @@ public class SqrtUsingBSearch {
 	
 	
 	public static double morePrecision(int tempsoln, int n, int precision ) {
+		if(tempsoln == 0) {
+			return 0;
+		}
 		double ans = tempsoln, factor =1;
-		
-		for(int i=0; i< precision; i++) {
+		for(int i=0; i<precision; i++) {
 			factor /=10;
-			for(double j=ans; j*j<n; j +=factor) {
+			for(double j=ans; j<n/j; j = j+factor) {
 				ans =j;
 			}
 		}
-		
+		ans =  Math.floor(ans * 1000) / 1000;	//to remove the unwanted decimal numbers after precision count position
 		return ans;
-	
 	}
 }
