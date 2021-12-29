@@ -7,7 +7,6 @@
  */
 package Arrays;
 
-import java.util.Date;
 
 /**
  * @author Pankaj Rai
@@ -47,12 +46,12 @@ public class BookAllocation {
 			
 			if(isPossible(arr,students, mid) == true) {
 				ans = mid;
-				e = mid -1;
+				e = mid -1;	//if mid is the possible value value then store it in ans and try to find the minimum by searching in lower range
 			}else {
-				s = mid+1;
+				s = mid+1;	// if mid is not the possible value then try to search in greater range values
 			}
 			
-			mid = s + (e-s)/2;
+			mid = s + (e-s)/2;	//update mid
 		}
 		return ans;
 	}
