@@ -21,7 +21,7 @@ public class BookAllocation {
 		long t1 = System. currentTimeMillis();
 		
 		int[] arr = {12, 34, 67, 90};
-		int min_page = allocateBooks(arr, 2);
+		int min_page = allocateBooks(arr, 3);
 		System.out.println(min_page);
 		
 		long t2 = System. currentTimeMillis();
