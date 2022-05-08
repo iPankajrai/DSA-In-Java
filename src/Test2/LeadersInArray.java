@@ -4,7 +4,7 @@
 package Test2;
 
 /**
- * @author Mantrik
+ * @author Pankaj Rai
  *
  */
 public class LeadersInArray {
@@ -12,13 +12,17 @@ public class LeadersInArray {
 	/**
 	 * @param args
 	 */
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		int[] arr = {13, 17, 5, 4, 6};
 		leaders(arr);
-
 	}
+
+
 	
 	public static void leaders(int[] input) {
 		/* Your class should be named Solution 
