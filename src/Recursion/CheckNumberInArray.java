@@ -30,4 +30,7 @@ public class CheckNumberInArray {
         
         return smallAns;
 	}
+
+	
+	
 }

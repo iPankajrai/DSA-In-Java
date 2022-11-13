@@ -87,7 +87,9 @@ public class Sort {
 		int i=0; 
 		int j=0;
 		while(k<n3){
+			// insert elements into merged array
 			while(j<n2 && i<n1) {
+				//To insert elements from array 1 and array 2 on sorting order
 				if(arr2[j] < arr1[i]) {
 					arr3[k] = arr2[j];
 					j++;
@@ -103,11 +105,13 @@ public class Sort {
 				}
 			}
 			while(i < n1) {
+				//To insert rest of the element of array 1
 				arr3[k] = arr1[i];
 				k++;
 				i++;
 			}
             while(j < n2) {
+            	//To insert rest of the element of array 2
 				arr3[k] = arr2[j];
 				k++;
 				j++;

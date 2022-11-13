@@ -33,5 +33,18 @@ public class CheckSorted {
 		
 		return smallAns;
 	}
-
+	
+	
+	// This function checks if the array is sorted from startIndex to end
+	public static boolean isSortedBetter(int[] input, int startIndex) {
+		if(startIndex >= input.length - 1) {
+			return true;
+		}
+		if(input[startIndex] > input[startIndex+1]) {
+			return false;
+		}
+		
+		boolean smallAns = isSortedBetter(input, startIndex+1);
+		return smallAns;
+	}
 }
