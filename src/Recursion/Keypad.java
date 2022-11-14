@@ -15,7 +15,7 @@ public class Keypad {
 	
 	private static String[] helper(int dig){
 		String[] out = {};
-		switch(dig){
+		/*switch(dig){
 			case 1:
 				out = {""}; 
 				break;
@@ -46,8 +46,10 @@ public class Keypad {
 			case 0:
 				out = {"x", "y", "z"};
 				break;	
-		}
+		}*/
 		return out;
 
 	} 
+	
+	
 }
