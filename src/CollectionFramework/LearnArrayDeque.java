@@ -17,7 +17,7 @@ public class LearnArrayDeque {
 		ArrayDeque<Integer> adq = new ArrayDeque<>();
 		
 		//Offer and OfferLast does the same.
-		// Offer came from queue interface
+		// Offer comes from queue interface
 		adq.offer(12);
 		adq.offerFirst(45);
 		adq.offerLast(13);
